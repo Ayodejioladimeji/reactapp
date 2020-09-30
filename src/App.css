@@ -1,38 +1,104 @@
+* DECLARING THE BODY OF THE PAGE */
+
+body{
+  background:orangered;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+
+/* tHE SECTION OF THE APP (PARENT CONTAINER) */
 .App {
-  text-align: center;
+  font-family:sans-serif;
+  background:orange;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  height:70vh;
+  width:25%;  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* THE SECTION OF THE HEADER */
+.header{
+  background:maroon;
+  height:10vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1{
+  text-align:center;
+  color:white;
+  font-family:cursive;
+  padding:15px;
+  font-size:25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* THE SECTION OF THE BODY */
+.body{
+  height:35vh;
+  padding:25px;
+  /* background:maroon; */
 }
 
-.App-link {
-  color: #61dafb;
+.result{
+  background:orangered;
+  height:28vh;
+  margin:auto;
+  width:65%;
+  border-radius:150px;
+  border:5px solid maroon;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result h1{
+  font-size:130px;
+  text-align:center;
+  padding:25px 0;
+  color:white;
+  text-shadow:5px 5px maroon;
+}
+
+/* THE SECTION OF THE FOOTER */
+.footer{
+  height:17vh;
+  display:flex;
+  justify-content: space-around;
+}
+
+.footer button{
+  background:maroon;
+  height:10vh;
+  width:20%;
+  border:none;
+  border-radius:150px;
+  outline:none;
+}
+
+.footer button i{
+  color:white;
+  font-size:25px;
+  cursor:pointer;
+}
+
+.footer button:hover{
+  background:orangered;
+  border:3px solid maroon;
+}
+
+
+/* THE SECTION OF THE DEVCAREER */
+.dev{
+  background:maroon;
+  height:8vh;
+}
+
+.dev h2{
+  color:white;
+  text-align:center;
+  font-family:cursive;
+  padding:8px;
 }
